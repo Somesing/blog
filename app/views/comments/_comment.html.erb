@@ -1,0 +1,15 @@
+<% div_for comment do %>
+  <p>
+  <p>
+    <b>Author:</b>
+    <%= comment.commentor %>
+  </p>
+
+  <p>
+    <b>Body:</b>
+    <%= comment.body %>
+  </p>
+
+<%= link_to 'Edit', edit_post_comment_path(@path, comment) %> |
+<%= link_to 'Delete', post_comment_path(@article, comment), :confirm => 'Are you sure?', :method => :delete %>
+<% end %>
