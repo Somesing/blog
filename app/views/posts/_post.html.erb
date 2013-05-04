@@ -1,0 +1,12 @@
+<p>
+  <b> Title:</b>
+  <%= post.title %>
+</p>
+<p>
+  <b>Body:</b>
+  <%= post.body %>
+</p>
+
+<%= link_to 'Show', post %>
+<%= link_to 'Edit', edit_post_path(post) %>
+<%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => delete %>
